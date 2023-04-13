@@ -188,7 +188,7 @@ right:20%;
     grid-area: pro1;
     position: relative;
    
-   background-color: aqua;  
+   
    margin-bottom: 5%;
     
 }
@@ -208,7 +208,7 @@ right:20%;
 }
 .imgPro1{
     grid-area: imgPro1;
-    background-color: #C8049F;
+   
       margin-right: 25%;
     
     background-image: url("../images/Pro1.png");
@@ -220,7 +220,7 @@ right:20%;
    
 }
 .imgPro2{
-    background-color: #C8049F;
+   
 
     grid-area: imgPro2;
      margin-left: 20%;
@@ -232,7 +232,7 @@ right:20%;
 
 }
 .imgPro3{
-    background-color: #C8049F;
+    
 
     grid-area: imgPro3;
      margin-right: 20%;
@@ -263,7 +263,7 @@ right:20%;
     background-color: rgba(255,255,255);
     position: absolute;
     top:50%;
-    right:55%;
+    right:10%;
     width:70%;
     height:50%;
     transform:translate(-50%,-50%);
