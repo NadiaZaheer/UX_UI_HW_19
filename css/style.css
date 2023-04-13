@@ -1,3 +1,10 @@
+
+/*color palette
+
+black dull #1E262A
+CTA #C8049F*/
+
+
 /*Styling of Header Section*/
 
 .navigation{
@@ -15,6 +22,7 @@
     display: inline-block; 
 
     vertical-align: top;
+    
             
 }
 
@@ -34,7 +42,7 @@ nav {
 
 nav ul {
     width: 40%;
-    margin:auto;
+    margin:0;
     float:right;
     
 }
@@ -45,31 +53,34 @@ nav li {
     padding: 8px;
     font-family: Helvetica;
     
+    
     }
 
 .inline-block a{
 
     text-decoration: none;
-    color:black;
+    color:#1E262A;
     display: block;
+    font-size: larger;
+    font-weight:bold;
     
      
 }
 .navigation li:hover:not(.active) {
     
        
-    border-bottom: 2px solid #014553ff;
-    background-color:   rgba(66, 157, 182, 0.066);
+    border-bottom: 3px solid #C8049F;
+    background-color:  #e4aad67a;
     
   }
 
 /*hero styling */ 
 
 .heroImg {
-    height: 600px;
+    height: 880px;
     padding: 25px;
-    margin: 0px;
-    background-image: url("../images/leaves.avif");
+    margin-bottom:0px;
+    background-image: url("../images/Hero2.png");
     background-repeat:no-repeat;
     background-position: center;
     background-size: cover;
@@ -79,32 +90,96 @@ nav li {
   }
 
  
-    
+  
+  
+  /* Place text in the left middle of the image */
 .content {
 
-/* Place text in the middle of the image */
-
-
-    text-align: center;
+    text-align: left;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 30%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #1E262A;
+    
   }
-h1 {
+.content h1 {
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica,Arial, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
 }
+.content p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.illustration{
+
+position: absolute;
+top:15%;
+right:20%;
+
+}
+/*styling the button*/
+
+.heroImg button {
+  position: absolute;
+  top:70%;
+  right:30%;
+  background-color: #C8049F;
+  border: none;
+  font-size:medium;
+  
+  color: #FFFFFF;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.10s; /* Safari */
+  transition-duration: 0.10s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+    font-family: Helvetica,Arial, sans-serif;
+    border-radius: 6px;
+}
+
+.heroImg button:after {
+  content: "";
+  background: #F380DB;
+  display: block;
+  position: absolute;
+  padding-top: 200%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+ .heroImg button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+/*button shadow effect on hover */
+.heroImg button:hover:not(.active) {     
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    } 
+
+
+
 /*My Work Styling */
 .workGrid{
-    border: 3px solid seagreen;
+    margin-top: 10px;
+    
     display: grid;
-    grid-template-rows:40vh 40vh 40vh;
+    grid-template-rows:50vh 50vh 50vh;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "pro1 pro1 imgPro1 imgPro1 imgPro1"
-    "pro2 pro2 imgPro2 imgPro2 imgPro2"
+    " imgPro2 imgPro2 imgPro2 pro2 pro2"
     "pro3 pro3 imgPro3 imgPro3 imgPro3";
           
 }
@@ -112,44 +187,62 @@ h1 {
 .pro1{
     grid-area: pro1;
     position: relative;
-    
-  
    
+   background-color: aqua;  
+   margin-bottom: 5%;
+    
 }
 .pro2{
     grid-area: pro2;
     position: relative;
+    
+    margin-bottom: 5%;
+  
 }
 .pro3{
     grid-area: pro3;
     position: relative;
+     
+    margin-bottom: 5%;
+
 }
 .imgPro1{
     grid-area: imgPro1;
+    background-color: #C8049F;
+      margin-right: 25%;
     
-    margin-right: 20%;
-    background-image: url("../images/leaves.avif");
+    background-image: url("../images/Pro1.png");
     background-repeat: no-repeat;
-   background-size:cover;
+   background-size:contain;
    background-position: center;
+   margin-bottom: 5%;
+
+   
 }
 .imgPro2{
+    background-color: #C8049F;
+
     grid-area: imgPro2;
-   
-    margin-right: 20%;
-    background-image: url("../images/3.jpg");
+     margin-left: 20%;
+    background-image: url("../images/Pro2.png");
    background-repeat: no-repeat;
-   background-size:cover;
+   background-size:contain;
    background-position: center;
+   margin-bottom: 5%;
+
 }
 .imgPro3{
+    background-color: #C8049F;
+
     grid-area: imgPro3;
-    
-    margin-right: 20%;
-    background-image: url("../images/1.jpg");
+     margin-right: 20%;
+    background-image: url("../images/Pro3.png");
     background-repeat: no-repeat;
-   background-size:cover;
-   background-position: center;
+   background-size:contain;
+   background-position: center;  
+    margin-bottom: 5%;
+
+
 }
 
 .title1{
@@ -157,22 +250,22 @@ h1 {
     background-color: rgba(255,255,255);
     position: absolute;
     top:50%;
-    left:70%;
-    width:80%;
-    height:80%;
+    left:80%;
+    width:70%;
+    height:50%;
     transform:translate(-50%,-50%);
     border: 1px solid teal;
     z-index: 100;
-    text-align: center;margin: 0;
+    text-align: center;
 }
 .title2{
 
     background-color: rgba(255,255,255);
     position: absolute;
     top:50%;
-    left:70%;
-    width:80%;
-    height:80%;
+    right:55%;
+    width:70%;
+    height:50%;
     transform:translate(-50%,-50%);
     border: 1px solid teal;
     z-index: 100;
@@ -184,13 +277,13 @@ h1 {
     background-color: rgba(255,255,255);
     position: absolute;
     top:50%;
-    left:70%;
-    width:80%;
-    height:80%;
+    left:80%;
+    width:70%;
+    height:50%;
     transform:translate(-50%,-50%);
     border: 1px solid teal;
     z-index: 100;
-    text-align:center;
+    text-align: center;
 }
 
 
