@@ -1,0 +1,340 @@
+/*Styling of Header Section*/
+
+.navigation{
+
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;/*Note: overflow:hidden is added to the  element to prevent li elements from going outside of the list.*/
+    background-color:whitesmoke transparent 100%;
+   
+  }
+
+.inline-block {
+    display: inline-block; 
+
+    vertical-align: top;
+            
+}
+
+
+.logo {
+ width: 23% ;
+ padding: 1%;
+ }
+
+nav {
+    
+    width: 73%;
+    padding:1%;
+    
+   
+    }
+
+nav ul {
+    width: 40%;
+    margin:auto;
+    float:right;
+    
+}
+
+
+nav li {
+    display: inline-block;
+    padding: 8px;
+    font-family: Helvetica;
+    
+    }
+
+.inline-block a{
+
+    text-decoration: none;
+    color:black;
+    display: block;
+    
+     
+}
+.navigation li:hover:not(.active) {
+    
+       
+    border-bottom: 2px solid #014553ff;
+    background-color:   rgba(66, 157, 182, 0.066);
+    
+  }
+
+/*hero styling */ 
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+    margin: 0px;
+    background-image: url("../images/leaves.avif");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   
+    
+  }
+
+ 
+    
+.content {
+
+/* Place text in the middle of the image */
+
+
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+h1 {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*My Work Styling */
+.workGrid{
+    border: 3px solid seagreen;
+    display: grid;
+    grid-template-rows:40vh 40vh 40vh;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "pro1 pro1 imgPro1 imgPro1 imgPro1"
+    "pro2 pro2 imgPro2 imgPro2 imgPro2"
+    "pro3 pro3 imgPro3 imgPro3 imgPro3";
+          
+}
+
+.pro1{
+    grid-area: pro1;
+    position: relative;
+    
+  
+   
+}
+.pro2{
+    grid-area: pro2;
+    position: relative;
+}
+.pro3{
+    grid-area: pro3;
+    position: relative;
+}
+.imgPro1{
+    grid-area: imgPro1;
+    
+    margin-right: 20%;
+    background-image: url("../images/leaves.avif");
+    background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
+}
+.imgPro2{
+    grid-area: imgPro2;
+   
+    margin-right: 20%;
+    background-image: url("../images/3.jpg");
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
+}
+.imgPro3{
+    grid-area: imgPro3;
+    
+    margin-right: 20%;
+    background-image: url("../images/1.jpg");
+    background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
+}
+
+.title1{
+
+    background-color: rgba(255,255,255);
+    position: absolute;
+    top:50%;
+    left:70%;
+    width:80%;
+    height:80%;
+    transform:translate(-50%,-50%);
+    border: 1px solid teal;
+    z-index: 100;
+    text-align: center;margin: 0;
+}
+.title2{
+
+    background-color: rgba(255,255,255);
+    position: absolute;
+    top:50%;
+    left:70%;
+    width:80%;
+    height:80%;
+    transform:translate(-50%,-50%);
+    border: 1px solid teal;
+    z-index: 100;
+   text-align: center;
+}
+
+.title3{
+
+    background-color: rgba(255,255,255);
+    position: absolute;
+    top:50%;
+    left:70%;
+    width:80%;
+    height:80%;
+    transform:translate(-50%,-50%);
+    border: 1px solid teal;
+    z-index: 100;
+    text-align:center;
+}
+
+
+
+
+/*My skills Styling */
+.flexContainer{
+    border:3px solid blue;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+  
+}
+.flexContainer > div{
+    width: 33%;
+    border:3px solid lightblue;
+    padding: 1%;
+    margin: 1%;
+}
+.flexContainer img{
+    display: block;
+    width:20%;
+    height:auto;
+    margin:0 auto;
+}
+
+
+/*FOOTER styling*/
+footer{
+
+    border:3px solid red;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+footer ul{
+    
+    font-size: small;
+    display: flex;
+    flex-direction:column;
+}
+
+                            
+input[type=text], select, textarea {
+    width: 20%;
+    padding: 4px;
+    border: none;
+    border: 2px solid rgb(2, 52, 60);
+    margin-top: 4px;
+
+  }
+
+  /*Media Query starts here*/
+
+@media only screen and (max-width:600px){
+
+    .flexContainer{
+
+        display: flex;
+        flex-direction: column;
+    }
+        .flexContainer > div{
+            width:100%;
+
+        }
+        .flexContainer img{
+            display: block;
+            width:100%;
+            height:auto;
+            margin:0 auto;
+        }
+    .workGrid{
+        border: 3px solid seagreen;
+        display: grid;
+        grid-template-rows:40vh 20vh 40vh 20vh 40vh 20vh ;
+        grid-template-columns:1fr;
+        grid-template-areas: 
+        "imgPro1"
+        "pro1"    
+        "imgPro2"
+        "pro2"    
+        "imgPro3"    
+        "pro3" ;
+          
+}
+.imgPro1{
+    margin:2%;
+
+}
+.imgPro2{
+    margin:2%;
+}
+.imgPro3{
+    margin: 2%;
+}
+.title1{
+
+    background-color: rgba(255,255,255);
+    position: absolute;
+    top:10%;
+        width:90%;
+    height:100%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border: 1px solid teal;
+    z-index: 100;
+    text-align: center;
+    margin: 0;
+
+}
+.title2{
+
+    background-color: rgba(255,255,255);
+    position: absolute;
+    top:10%;
+    left:50%;
+    width:90%;
+    height:100%;
+    transform:translate(-50%,-50%);
+    border: 1px solid teal;
+    z-index: 100;
+    text-align: center;
+    margin: 0;
+
+}
+.title3{
+
+    background-color: rgba(255,255,255);
+    position: absolute;
+    top:10%;
+    left:50%;
+    width:90%;
+    height:100%;
+    transform:translate(-50%,-50%);
+    border: 1px solid teal;
+    z-index: 100;
+    text-align: center;
+    margin: 0;
+
+}
+
+
+
+}
