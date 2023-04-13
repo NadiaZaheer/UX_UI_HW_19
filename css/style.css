@@ -85,13 +85,13 @@ nav li {
     background-position: center;
     background-size: cover;
     position: relative;
+    /*The image will be responsive*/
+    max-width:100%;
+    
    
     
   }
-
- 
-  
-  
+    
   /* Place text in the left middle of the image */
 .content {
 
@@ -125,8 +125,8 @@ right:20%;
 
 .heroImg button {
   position: absolute;
-  top:70%;
-  right:30%;
+  top:65%;
+  right:20%;
   background-color: #C8049F;
   border: none;
   font-size:medium;
@@ -172,10 +172,9 @@ right:20%;
 
 /*My Work Styling */
 .workGrid{
-    margin-top: 10px;
-    
+    margin-top: 50px;
     display: grid;
-    grid-template-rows:50vh 50vh 50vh;
+    grid-template-rows:60vh 60vh 60vh;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "pro1 pro1 imgPro1 imgPro1 imgPro1"
@@ -187,62 +186,51 @@ right:20%;
 .pro1{
     grid-area: pro1;
     position: relative;
-   
-   
-   margin-bottom: 5%;
+    margin-bottom: 10%;
     
 }
 .pro2{
     grid-area: pro2;
     position: relative;
     
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   
 }
 .pro3{
     grid-area: pro3;
     position: relative;
-     
-    margin-bottom: 5%;
+     margin-bottom: 10%;
 
 }
 .imgPro1{
     grid-area: imgPro1;
-   
-      margin-right: 25%;
-    
-    background-image: url("../images/Pro1.png");
-    background-repeat: no-repeat;
-   background-size:contain;
-   background-position: center;
-   margin-bottom: 5%;
-
-   
+    margin-right: 25%;
+    background-image: url("../images/01.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    margin-bottom: 10%;
+ 
 }
+
 .imgPro2{
-   
-
     grid-area: imgPro2;
-     margin-left: 20%;
-    background-image: url("../images/Pro2.png");
-   background-repeat: no-repeat;
-   background-size:contain;
-   background-position: center;
-   margin-bottom: 5%;
-
+    margin-left: 20%;
+    background-image: url("../images/2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin-bottom: 10%;
 }
 .imgPro3{
-    
-
+   
     grid-area: imgPro3;
      margin-right: 20%;
-    background-image: url("../images/Pro3.png");
+    background-image: url("../images/3.png");
     background-repeat: no-repeat;
-   background-size:contain;
+   background-size:cover;
    background-position: center;  
-    margin-bottom: 5%;
-
-
+    margin-bottom: 10%;
 }
 
 .title1{
@@ -250,7 +238,7 @@ right:20%;
     background-color: rgba(255,255,255);
     position: absolute;
     top:50%;
-    left:80%;
+    left:90%;
     width:70%;
     height:50%;
     transform:translate(-50%,-50%);
@@ -263,7 +251,7 @@ right:20%;
     background-color: rgba(255,255,255);
     position: absolute;
     top:50%;
-    right:10%;
+    right:20%;
     width:70%;
     height:50%;
     transform:translate(-50%,-50%);
@@ -277,7 +265,7 @@ right:20%;
     background-color: rgba(255,255,255);
     position: absolute;
     top:50%;
-    left:80%;
+    left:90%;
     width:70%;
     height:50%;
     transform:translate(-50%,-50%);
