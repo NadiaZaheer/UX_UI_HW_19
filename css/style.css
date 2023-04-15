@@ -6,6 +6,8 @@
 #BF7C95 pink shade my skills
 #530A17 darkest for footer
 #D5C7BE Title background clr
+ #CBE3CB Title border
+   
 */
 
 h4{
@@ -101,9 +103,9 @@ nav li {
 /*hero styling */ 
 
 .heroImg {
-    height: 880px;
+    
     padding: 25px;
-    margin-bottom:0px;
+    margin-bottom:5px;
     background-image: url("../images/Hero2.png");
     background-repeat:no-repeat;
     background-position: center;
@@ -111,6 +113,7 @@ nav li {
     position: relative;
     /*The image will be responsive*/
     max-width:100%;
+    height: 90vh;
     
    
     
@@ -263,7 +266,9 @@ right:20%;
 
 .title1{
 
-    background-color: #D5C7BE;
+    border-color: #CBE3CB;
+    border-style: solid;
+    background-color: #EFFFF6;
     position: absolute;
     top:50%;
     left:90%;
@@ -276,8 +281,9 @@ right:20%;
     text-align: center;
 }
 .title2{
-
-    background-color: #D5C7BE;
+    border-color: #CBE3CB;
+    border-style: solid;
+    background-color: #EFFFF6;
     position: absolute;
     top:50%;
     right:20%;
@@ -290,8 +296,9 @@ right:20%;
 }
 
 .title3{
-
-    background-color:#D5C7BE;
+    border-color: #CBE3CB;
+    border-style: solid;
+    background-color: #EFFFF6;
     position: absolute;
     top:50%;
     left:90%;
@@ -423,7 +430,7 @@ input[type=text], select, textarea {
     height: 25px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.2);
-    
+    border-style:none;
     color:#FFFFFF ;
     font-size: large;
 
@@ -472,6 +479,41 @@ footer ul{
 
 @media only screen and (max-width:600px){
 
+/*Hero Section media query starts*/
+
+
+    nav.inline-block{ display: none;}
+    img.illustration{
+
+        top:25%;
+        right:3%;
+       width:45%;
+    }
+    .logo{
+        width: 48px;
+        
+    }
+    .content {
+        padding-left: 5vh;
+
+    }
+    .content h1{
+        font-size: 2rem;
+    }
+    .content p{
+        font-size:1rem;
+    }
+    .heroImg button{
+        width:10rem;
+        font-size: medium;
+        padding: 0.8rem;
+        top:70%;
+        right:10%;
+    }
+
+/*Hero Section media query ends*/
+
+
   /*work grid media query starts here*/
  
     .workGrid{
@@ -487,8 +529,8 @@ footer ul{
         "imgPro3"    
         "pro3";
           
-}
-.imgPro1{
+    }
+    .imgPro1{
     grid-area: imgPro1;
     margin:2%;
     background-image: url("../images/01.png");
@@ -498,9 +540,9 @@ footer ul{
    
    
  
-}
+    }
 
-.imgPro2{
+    .imgPro2{
     
     grid-area: imgPro2;
     margin: 2%;
@@ -509,8 +551,8 @@ footer ul{
     background-size:cover;
     background-position: center;
     
-}
-.imgPro3{
+    }
+    .imgPro3{
    
     grid-area: imgPro3;
     margin: 2%;
@@ -520,17 +562,17 @@ footer ul{
    background-size:cover;
    background-position: center;  
  
-}
+    }
 
-.pro1{
+    .pro1{
     grid-area: pro1;
     position: relative;
     margin-bottom: 4%;
    
     
     
-}
-.pro2{
+    }
+    .pro2{
     grid-area: pro2;
     
     position: relative;
@@ -538,30 +580,16 @@ footer ul{
    
     
   
-}
-.pro3{
+    }
+    .pro3{
     grid-area: pro3;
     position: relative;
     margin-bottom: 4%;
     
 
-}
+    }
 
-.title1{
-
-    background-color: rgba(255,255,255);
-    position: absolute;
-    top:20%;
-    left:50%;
-    width:70%;
-    height:120%;
-    transform:translate(-50%,-50%);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    z-index: 100;
-    text-align: center;
-}
-
-.title2{
+    .title1{
 
     background-color: rgba(255,255,255);
     position: absolute;
@@ -573,8 +601,9 @@ footer ul{
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     z-index: 100;
     text-align: center;
-}
-.title3{
+    }
+
+    .title2{
 
     background-color: rgba(255,255,255);
     position: absolute;
@@ -586,10 +615,23 @@ footer ul{
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     z-index: 100;
     text-align: center;
-}
+    }
+    .title3{
 
-h4{font-size: medium;}
-p{font-size: small;}
+    background-color: rgba(255,255,255);
+    position: absolute;
+    top:20%;
+    left:50%;
+    width:70%;
+    height:120%;
+    transform:translate(-50%,-50%);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 100;
+    text-align: center;
+    }
+
+    h4{font-size: medium;}
+    p{font-size: small;}
 
 
 /*work grid media query ends here*/
@@ -597,7 +639,7 @@ p{font-size: small;}
 /*My Skills media query starts here*/
 
 
-.flexContainer{
+    .flexContainer{
 
     display: flex;
     flex-direction: column;
@@ -605,25 +647,25 @@ p{font-size: small;}
     align-items: center;
    text-align: center;
    font-size:medium ;
-}
-.flexContainer img{
+    }
+    .flexContainer img{
     display: block;
     width: 30%;
     
     
-}
-.flexContainer > div{
+    }
+    .flexContainer > div{
     width: 70%;
     
     padding: 1%;
     margin: 1%;
-}
+    }   
 /*My Skills media query ends here*/
 
 
 
 /*Footer media query starts here*/
-footer{
+    footer{
     
     display:grid;
     grid-template-rows:10rem 20rem 20rem ;
@@ -632,8 +674,8 @@ footer{
     " form"
     " ul";
     align-items: center;
-}
-footer form{
+    }
+    footer form{
     background-color: #F380DB;
     grid-area: form;
    margin: 2%;
@@ -644,7 +686,7 @@ footer form{
    align-items: center;
    justify-content: center;
    
-}
+    }
 
 
 
