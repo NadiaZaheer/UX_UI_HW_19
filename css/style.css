@@ -32,7 +32,7 @@ font-family: Helvetica,Arial, sans-serif;
 
 }
 /*Styling of Header Section*/
-.topbnav{visibility:hidden;}
+.topnav{visibility:hidden;}
 .navigation{
 
     display: flex;
@@ -44,7 +44,7 @@ font-family: Helvetica,Arial, sans-serif;
    
   }
 
-.inline-block {
+nav.inline-block {
     display: inline-block; 
 
     vertical-align: top;
@@ -67,7 +67,7 @@ nav {
     }
 
 nav ul {
-    width: 40%;
+    width: 60%;
     margin:0;
     float:right;
     
@@ -529,7 +529,7 @@ footer ul{
    
       }
       
-          /* Hide the links inside the navigation menu (except for logo/home) */
+    /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
     display: none;
   }
@@ -554,17 +554,14 @@ footer ul{
     display: block;
          
       }
- .active {
+ a.active {
     background-color: #04AA6D;
     color: white;
     
    
     
   }
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
+  
   
   
   
@@ -735,7 +732,7 @@ footer ul{
     align-items: center;
     }
     footer form{
-    background-color: #F380DB;
+  
     grid-area: form;
    margin: 2%;
     font-size: large;    
