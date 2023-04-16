@@ -3,6 +3,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>"My Portfolio Website"
     </title>   
 </head>
@@ -21,7 +23,8 @@
         <div class="inline-block ">
             <img class="logo" src="../images/1.png" alt="Logo"> 
         </div>
-
+       
+       
        
         
 <!---Here Starts the Nav Wrapper---> 
@@ -34,8 +37,28 @@
                 <li><a href="#linkedin">LinkedIn</a></li>
             </ul>
         </nav>
-    </header>
+              
+        <div class="topnav">
+            <a href="#home" class="active">Logo</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="#portfolio">Portfolio</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+              <a href="#linkin">LinkedIn</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
 
+
+
+
+          </header>
+          
 
 
     <div class="content">
@@ -153,8 +176,25 @@
 </footer>
 
 
+<script scr="js/index.js">
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    
+    </script>
+
+
+
 
 
 </body>
-<script scr="js/index.js"></script>
+
+
 </html>
