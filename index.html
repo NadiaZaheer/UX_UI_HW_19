@@ -3,26 +3,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <title>"My Portfolio Website"</title>   
 </head>
 <body>
    
-
-
-
 <!---Here Starts the Hero Image Section--->
 
 <section class="heroImg">
 <!---Here Starts the Header --->
-
     <header class="navigation">
-
         <div class="inline-block ">
             <img class="logo" src="../images/1.png" alt="Logo"> 
-        </div>
-                  
+        </div>               
 <!---Here Starts the Nav Wrapper---> 
+
         <nav class="inline-block">
             <ul>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -43,13 +37,11 @@
               <a href="#linkin">LinkedIn</a>
             </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" >
               <i class="fa fa-bars"></i>
             </a>
         </div>
-      
-
-        </header>
+    </header>
           
 
 
@@ -67,21 +59,16 @@
     </div>
 
     <img class="illustration" src="../images/girl.png" alt="My Pic">
-    <button>
+    <button id="scroll-to-myWork">
         View My Work
     </button>
 
 </section>
 <!---Here Starts the My Work Section--->
-<section class="myWork">
-   
-    
-    <div class="workGrid">
-        
+<section id="id-myWork" class="myWork">      
+    <div class="workGrid">      
 <!---Here Starts the 1st Project div--->
-        <div class="pro1"> 
-
-            
+        <div class="pro1">             
             <div class="title1">
                 <h4> RWD Goverment Agency  <br>Navigation System Redesign</h4> 
                 <p> Lorem ipsum Lorem ipsum Lorem ipsum</p>
@@ -89,7 +76,6 @@
             </div>
         </div>
         <div class="imgPro1"></div>
-
 <!---Here Starts the 2nd Project div--->
         <div class="pro2"> 
             <div class="title2">
@@ -109,7 +95,6 @@
             </div>
         </div>
         <div class="imgPro3"></div>
-      
     </div>
 
 </section>
@@ -141,11 +126,11 @@
 
 <!---Here Starts the Footer Section-->
     
-<footer>
+    <footer>
     <h1>Lets Get in Touch!! </h1>
     
 
-        <form action="/action_page.php">
+        <form id="contact" action="/action_page.php">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name"><br><br>
             <label for="email">Email Address:</label><br>
@@ -163,12 +148,9 @@
     </ul>
 
     
-</footer>
-
-
-
+    </footer>
 </body>
-<script scr="js/index.js"></script>
+<script src="js/index.js"></script>
 
 </html>
 
