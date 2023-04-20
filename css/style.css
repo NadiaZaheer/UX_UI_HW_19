@@ -1,5 +1,5 @@
 
-/*color palette.
+/*color palette
 
 #1E262A black dull for text
 #C8049F CTA 
@@ -33,21 +33,36 @@ font-family: Helvetica,Arial, sans-serif;
 }
 /*Styling of Header Section*/
 .topnav{visibility:hidden;}
-.navigation{
+
+header.navigation{
 
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    
+    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;/*Note: overflow:hidden is added to the  element to prevent li elements from going outside of the list.*/
-    background-color:whitesmoke transparent 100%;
+    overflow: hidden;/*Note: overflow:hidden is added to the element to prevent li elements from going outside of the list.*/
+    background-color: transparent 100%;
+    border:2px solid rgb(43, 0, 255);
+   
+
    
   }
 
 nav.inline-block {
     display: inline-block; 
+    width: 73%;
+    padding:1%;
+    border:2px solid red;
+    
+   
 
-    vertical-align: top;
+   
+   
     
             
 }
@@ -56,20 +71,19 @@ nav.inline-block {
 .logo {
  width: 23% ;
  padding: 1%;
+ border:2px solid rgb(0, 255, 94);
+ 
+
  }
 
-nav {
-    
-    width: 73%;
-    padding:1%;
-    
-   
-    }
+
 
 nav ul {
-    width: 60%;
+   
     margin:0;
     float:right;
+    
+   
     
 }
 

@@ -1,0 +1,45 @@
+header.navigation{
+
+    display: flex;
+    flex-direction: row;
+    
+    justify-content:right;
+     border:2px solid red;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;/*Note: overflow:hidden is added to the element to prevent li elements from going outside of the list.*/
+    background-color: transparent 100%;
+   
+  }
+
+
+.logo {
+ 
+   border:2px solid red;
+  margin-right:20rem;
+ }
+
+
+
+
+
+
+nav li {
+    display: inline-block;
+    padding: 1rem;
+    font-family: Helvetica;
+    
+    
+    }
+
+.inline-block a{
+
+    text-decoration: none;
+    color:#1E262A;
+    display: block;
+    font-size: large;
+    font-weight:bold;
+    
+     
+}
