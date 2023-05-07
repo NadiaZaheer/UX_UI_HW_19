@@ -1,68 +1,90 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
+    <!--Custom CSS-->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!--Bootstrap CSS-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>"My Portfolio Website"</title>   
 </head>
 <body>
    
 <!---Here Starts the Hero Image Section--->
+ <!---Here Starts the Header --->
+ 
 
     <section class="heroImg">
-        <!---Here Starts the Header --->
-        <header class="navigation">
-             <div class="inline-block ">
-                <img class="logo" src="images/1.png" alt="Logo"> 
-            </div>               
-            <!---Here Starts the Nav Wrapper---> 
+      <header>
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <!--LOGO-->
+          <a class="navbar-brand" href="#">
+            <img src="/images/Group 6.png" width="100px" height="75" alt="Logo">
+          </a>
+          <div class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+          </div>
+            
 
-            <nav class="inline-block">
-                <ul>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#linkedin">LinkedIn</a></li>
-                </ul>
-            </nav>
-            <!-- "Hamburger menu" -->
 
-            <div class="topnav">
-                <a href="#home" class="active">Logo</a>
-                <!-- Navigation links (hidden by default) -->
-                <div id="myLinks">
-                <a href="#portfolio">Portfolio</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#linkin">LinkedIn</a>
-                </div>
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" >
-                <i class="fa fa-bars"></i>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="/images/linkedin.webp" width="45" height="45" alt="LinkedInLogo">
                 </a>
-            </div>
-        </header>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      
+      
+        <div class="overlay"></div> 
+        
+      </header>
           
         <!---Here ends the Header --->
-
-
-        <div class="content">       
-            
-            <h1> Hello,<br>
-            I am Nadia Zaheer, <br>
-            </h1>
-            <p> UX/UI Designer. <br>
-            I like to create thoughtful, delightful <br> and user friendly design solutions.
-            </p>
-            
         
-        </div>
 
-        <img class="illustration" src="images/girl.png" alt="My Pic">
-        <button id="scroll-to-myWork">
-        Resume
-        </button>
+
+        <div class="container">
+          <div class="row" style="height: 400px; align-items: center;">
+            <div class="col-md-6">
+              <h1> Hello,<br>
+                I am Nadia Zaheer, <br>
+                </h1>
+                <p> UX/UI Designer. <br>
+                I like to create thoughtful, delightful <br> and user friendly design solutions.
+                </p>
+              <button class="CTA">Download Resume  &#x25BC;</button>
+              
+                
+            </div>
+            <div class="col-md-6 ">
+              <img src="images/girl.png" alt="Illustration" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        
+        
 
     </section>
 
@@ -120,7 +142,7 @@
                  Color theory, Iconography, Layout design, Responsive design, Animation and Motion design.  </p>
         </div>
         <div>
-            <img src="images/wd.png" alt="My Web Development">
+            <img src="images/WD.png" alt="My Web Development">
             <h3>Web Development Skills</h3>
             <p> HTML, CSS, JavaScipt, Responsive design,<br> Bootstrap framework. <br>Web Development Tools: VS Code, GitHub.</p>
         </div>
@@ -130,33 +152,49 @@
     <!--  My UX Skills section ends here -->
 
 <!---Here Starts the Footer Section-->
-    
-    <footer>
-        <h1>Lets Get in Touch!! </h1>
-        
 
-        <form id="contact" action="/action_page.php">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Email Address:</label><br>
-            <input type="text" id="email" name="name"><br><br>
-            <label for="msg">Message:</label><br>
-            <input type="text" id="msg" name="msg"><br>
-            <button type="submit">Submit</button> 
-        </form>
-    
-        <ul>
-            <li class="email">Email Address: nadia_iq6@hotmail.com</li>
-            <li class="linkedin">LinkedIn</li>  <br><br><br>
+    <footer class="container-fluid text">
+      <div class="row">
+        <div class="col">
+          <h1>Lets Get in Touch!!</h1>
+        </div>
+        <div class="col">
+          <form id="contact" action="/action_page.php">
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" /><br /><br />
+            <label for="email">Email Address:</label><br />
+            <input type="text" id="email" name="name" /><br /><br />
+            <label for="msg">Message:</label><br />
+            <textarea type="text" id="msg" name="msg"></textarea><br/>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="col">
+          <ul>
+            <li class="d-inline">nadia_iq6@hotmail.com</li>
+            <li class="d-inline">
+              <a href="#linkedin"> <img src="images/linkedin sm.png" /> </a>
+            </li>
             <li class="rights">© 2023 Nadia Zaheer. All rights reserved.</li>
-            
-        </ul>
-
-    
+          </ul>
+        </div>
+      </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
+    
 </body>
 
 
 </html>
 
+
+
+
+
+ 
