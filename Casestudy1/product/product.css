@@ -204,8 +204,94 @@ div.bg-body-tertiary.me-md-3.pt-3.px-3.pt-md-5.px-md-5.text-center.overflow-hidd
 
 
 
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 4;
+}
+
+/*footer styling*/
+footer{
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+ /* background-color:#8E4E66;*/
+ background-color: #1C2143;
+
+}
+footer.container-fluid.text{
+
+  margin:0;
+  align-items: center;
+  
+  
+  
+}
+div.col{
+  display: flex;
+  color:#f5f5f5;
+  background-color:#1C2143;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  align-items: center;
+   }
 
 
+input[type=text], select, textarea {
+    width: 40%;
+    height: 25px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-style:none;
+    color:#FFFFFF ;
+    font-size: large;
+    width:130%;
+
+    
+     }
+#msg{
+    height:4rem;
+}
+button[type=submit]{
+    
+  background-color: #C8049F;
+  border: none;
+  font-size:large;  
+  color: #FFFFFF;
+  padding: 6px;
+  width:5em;
+  margin-top: 1%;     
+  text-align: center;    
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: Helvetica,Arial, sans-serif;
+  border-radius: 4px;
+
+}
+
+
+
+button[type=submit]:hover:not(.active) {     
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  } 
+    form{
+      font-size: large;
+    }
+footer ul{
+         
+    font-size: larger;
+    list-style: none;
+}
+.rights{
+        
+    font-size:small;
+}
+
+
+
+/*FOOTER styling ends*/
 
 
 

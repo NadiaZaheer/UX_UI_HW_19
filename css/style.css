@@ -149,7 +149,8 @@ button.CTA {
     position: relative;
     display: inline-block;
     background-color: #C8049F;
-    border: none;
+    border: none !important;
+    border: 0 !important;
     font-size: large;
     color: #FFFFFF;
     padding: 20px;
@@ -157,6 +158,8 @@ button.CTA {
     text-align: center;
     -webkit-transition-duration: 0.4s;
     /* Safari */
+    
+    
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
@@ -165,14 +168,12 @@ button.CTA {
     border-radius: 6px;
     margin-top: 1%;
     min-height: 60px;
-    
-    
 }
 
 button.CTA:after {
     content: "";
     background: #F380DB;
-    
+    border: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -190,6 +191,7 @@ button.CTA:active:after {
   height: 300px;
   opacity: 0.5;
   transition:all 0.2s;
+  
   }
 
 
@@ -224,6 +226,8 @@ button.CTA:active:after {
     grid-area: pro1;
     position: relative;
     margin-bottom: 10%;
+    
+   
     
 }
 .pro2{
@@ -283,7 +287,7 @@ button.CTA:active:after {
     height:50%;
     transform:translate(-50%,-50%);
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-   
+    padding: 4%;
     z-index: 100;
     text-align: center;
 }
@@ -300,6 +304,7 @@ button.CTA:active:after {
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     z-index: 100;
    text-align: center;
+   padding: 4%;
 }
 
 .title3{
@@ -315,6 +320,7 @@ button.CTA:active:after {
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     z-index: 100;
     text-align: center;
+    padding: 4%;
 }
 /*myWork grid Button*/
 
@@ -451,24 +457,27 @@ input[type=text], select, textarea {
 }
 button[type=submit]{
     
-    background-color: #C8049F;
-    border: none;
-    font-size:large;  
-    color: #FFFFFF;
-    padding: 6px;
-    width:5em;
-    margin-top: 1%;     
-    text-align: center;    
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-    font-family: Helvetica,Arial, sans-serif;
-    border-radius: 4px;
+  background-color: #C8049F;
+  border: none;
+  font-size:large;  
+  color: #FFFFFF;
+  padding: 6px;
+  width:5em;
+  margin-top: 1%;     
+  text-align: center;    
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: Helvetica,Arial, sans-serif;
+  border-radius: 4px;
 
 }
-    button[type=submit]:hover:not(.active) {     
-    box-shadow: 0 12px 16px 0 rgba(255, 253, 253, 0.24), 0 17px 50px 0 rgba(247, 247, 247, 0.19);
-    } 
+
+
+
+button[type=submit]:hover:not(.active) {     
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  } 
     form{
       font-size: large;
     }
@@ -635,11 +644,12 @@ footer ul{
     top:20%;
     left:50%;
     width:70%;
-    height:120%;
+    height:30vh;
     transform:translate(-50%,-50%);
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     z-index: 100;
     text-align: center;
+    
     }
 
     .title2{
@@ -649,7 +659,7 @@ footer ul{
     top:20%;
     left:50%;
     width:70%;
-    height:120%;
+    height:30vh;
     transform:translate(-50%,-50%);
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     z-index: 100;
@@ -662,7 +672,7 @@ footer ul{
     top:20%;
     left:50%;
     width:70%;
-    height:120%;
+    height:30vh;
     transform:translate(-50%,-50%);
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     z-index: 100;
